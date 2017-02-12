@@ -1,12 +1,32 @@
 <h3>Main Page</h3>
 <p>guss what i m thinking about [a,b]</p>
-<input id="text" type="text">
-<button onclick="myFunctiion">try</button>
+
+<input id="myInput" type="text">
+<button onclick="myFunction()">Try it</button>
 <p id="demo"></p>
 <script>
-function myFunction(){
+function myFunction() {
+    var letter = document.getElementById("myInput").value;
+    var text;
+    // If the letter is "c"
+    if (letter === "c") {
+        text = "Spot on! Good job!";
+            // If the letter is "b" or "d"
+    } else if (letter === "b" || letter === "d") {
+        text = "Close, but not close enough.";
+            // If the letter is anything else
+    } else if(letter === "" || letter === " "){
+     text = "";
+    }else {
+        text = "Waaay off..";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
 
-var latter = 
 
-};
+
+<p id="p2">Hello World!</p>
+<script>
+document.getElementById("p2").style.color = "blue";
 </script>
