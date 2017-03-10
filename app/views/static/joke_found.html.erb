@@ -1,0 +1,11 @@
+
+<%= form_tag '/joke_found', method: :get do %>
+<%= text_field_tag :query %>
+<%= submit_tag %>
+<% end %>
+
+<%= image_tag @icon_url %>
+<%= @jokenew %>
+
+
+<%=@joke %>

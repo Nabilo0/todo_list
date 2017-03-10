@@ -22,6 +22,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
  ############### Added By Me Homie ##########
  gem 'clearance'
+ gem 'unirest'
  ############### End ########################
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
